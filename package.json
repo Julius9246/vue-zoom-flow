@@ -1,0 +1,36 @@
+{
+  "name": "vue-zoom-flow",
+  "version": "1.0.0",
+  "keywords": [
+    "flowChart",
+    "zoom flow",
+    "vue flow chart",
+    "vue 流程图"
+  ],
+  "license": "MIT",
+  "description": "vue-zoom-flow is a quick and convenient Vue plug-in to realize flow chart.",
+  "main": "lib/index.umd.min.js",
+  "author": "Julius9246 <liujun9246@163.com>",
+  "files": [
+    "/lib/index.umd.min.js",
+    "/lib/index.css",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name index --dest lib packages/index.vue",
+    "update": "npm run lib && npm publish",
+    "update-test": "npm run lib && npm publish --tag=beta"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "core-js": "^3.12.1",
+    "less": "^4.1.1",
+    "less-loader": "^7.0.0",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
